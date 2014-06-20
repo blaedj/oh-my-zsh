@@ -18,6 +18,7 @@ PROMPT='
 RPROMPT='${return_status}%{$reset_color%}${time}'
 
 # local time, color coded by last return code
+#time_enabled="%(?.%{$fg[green]%}.%{$fg[red]%})%*%{$reset_color%}" # time: timestamp style
 time_enabled="%(?.%{$fg[green]%}.%{$fg[red]%})%t%{$reset_color%}"
 time_disabled="%{$fg[green]%}%t%{$reset_color%}"
 time=$time_enabled
