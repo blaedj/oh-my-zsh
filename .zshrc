@@ -14,6 +14,10 @@ alias ll="ls -lh"
 alias -s pdf=evince
 
 alias gls="git ls"
+
+alias rpsec="rspec"
+alias z="zeus"
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -50,15 +54,13 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
-archey
-
 ulimit -c unlimited
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Set the default editor to emacs, runs emacsclient
- export EDITOR="/usr/local/bin/ec"
+export EDITOR="/usr/local/bin/ec"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:"~/.rvm/bin:/Applications/Android Studio.app/sdk/platform-tools/" # Add RVM to PATH for scripting
 #PATH=$PATH:$HOME/idea/bin # Add intellij IDEA to path
