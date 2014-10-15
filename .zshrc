@@ -11,12 +11,15 @@ ZSH_THEME="blaed"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -lh"
-alias -s pdf=evince
+#alias -s pdf=evince ubuntu specific
 
 alias gls="git ls"
 
-alias rpsec="rspec"
+alias rpsec="nocorrect rspec"
+alias rspec="nocorrect rspec"
 alias z="zeus"
+
+
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
