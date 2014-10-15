@@ -33,3 +33,4 @@ alias la='ls -lAh'
 
 alias afind='ack-grep -il'
 
+alias agh='sudo $(history -p \!\!)'
