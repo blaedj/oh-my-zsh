@@ -34,3 +34,12 @@ alias la='ls -lAh'
 alias afind='ack-grep -il'
 
 alias agh='sudo $(history -p \!\!)'
+
+alias reload!='. ~/.zshrc'
+alias tails="tail -n 75 -f"
+
+alias ll="ls -lh"
+alias gls="git ls"
+
+alias rpsec="rspec"
+alias ios = "open /Applications/Xcode.app/Contents/Applications/iOS\ Simulator.app"
