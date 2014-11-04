@@ -42,4 +42,4 @@ alias ll="ls -lh"
 alias gls="git ls"
 
 alias rpsec="rspec"
-alias ios = "open /Applications/Xcode.app/Contents/Applications/iOS\ Simulator.app"
+alias ios="open /Applications/Xcode.app/Contents/Applications/iOS\ Simulator.app"

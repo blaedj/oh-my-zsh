@@ -20,6 +20,11 @@ alias rspec="nocorrect rspec"
 alias z="zeus"
 
 
+# may only be necessary/helpful on osx,
+#try to fix zsh in emacs
+export LANG='en_US.UTF-8'
+export LC_ALL="en_US.UTF-8"
+
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -65,5 +70,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Set the default editor to emacs, runs emacsclient
 export EDITOR="/usr/local/bin/ec"
 
-export PATH=$PATH:"~/.rvm/bin:/Applications/Android Studio.app/sdk/platform-tools/" # Add RVM to PATH for scripting
+export PATH=$PATH:"~/.rvm/bin:/Applications/Android Studio.app/sdk/platform-tools" # Add RVM to PATH for scripting
 #PATH=$PATH:$HOME/idea/bin # Add intellij IDEA to path
