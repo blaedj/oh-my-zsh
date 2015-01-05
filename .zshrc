@@ -70,5 +70,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Set the default editor to emacs, runs emacsclient
 export EDITOR="/usr/local/bin/ec"
 
-export PATH=$PATH:"~/.rvm/bin:/Applications/Android Studio.app/sdk/platform-tools" # Add RVM to PATH for scripting
+#export PATH=$PATH:"~/.rvm/bin:/Applications/Android Studio.app/sdk/platform-tools" # Add RVM to PATH for scripting
 #PATH=$PATH:$HOME/idea/bin # Add intellij IDEA to path
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
