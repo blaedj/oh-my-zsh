@@ -70,6 +70,9 @@ ulimit -c unlimited
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# add postgresql from postgres.app to path
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+
 ### Set the default editor to emacs, runs emacsclient
 export EDITOR="/usr/local/bin/ec"
 
