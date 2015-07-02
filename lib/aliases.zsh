@@ -46,5 +46,5 @@ alias gls="git ls"
 alias rpsec="rspec"
 alias ios="open /Applications/Xcode.app/Contents/Applications/iOS\ Simulator.app"
 
-alias server="spring rails server -b 0.0.0.0"
+alias frs="foreman run spring rails server -b 0.0.0.0"
 alias pt="papertrail"
