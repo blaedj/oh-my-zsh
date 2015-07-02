@@ -27,3 +27,13 @@ fi
 
 # recognize comments
 setopt interactivecomments
+
+# rerun previous command. For when I try to Ctrl-p <enter> and forget to press Ctrl.
+alias p='$(fc -ln -1)'
+
+alias tails="tail -n 75 -f"
+alias rpsec="rspec" # I can't spell rspec
+alias ios="open /Applications/Xcode.app/Contents/Applications/iOS\ Simulator.app"
+
+alias frs="foreman run spring rails server -b 0.0.0.0"
+alias pt="papertrail"
