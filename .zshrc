@@ -65,6 +65,9 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
+# add dotifiles bin/ folder to path
+export PATH=$PATH:/Users/blaed/.dotfiles/bin/
+
 ulimit -c unlimited
 
 ### Added by the Heroku Toolbelt
@@ -74,7 +77,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
 ### Set the default editor to emacs, runs emacsclient
-export EDITOR="/usr/local/bin/ec"
+export EDITOR="ec"
 
 #export PATH=$PATH:"~/.rvm/bin:/Applications/Android Studio.app/sdk/platform-tools" # Add RVM to PATH for scripting
 #PATH=$PATH:$HOME/idea/bin # Add intellij IDEA to path
