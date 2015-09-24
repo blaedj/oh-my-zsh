@@ -19,6 +19,8 @@ alias rpsec="nocorrect rspec"
 alias rspec="nocorrect rspec"
 alias z="zeus"
 
+alias ec='open -a /usr/local/Cellar/emacs/24.5/Emacs.app "$@"'
+
 
 # may only be necessary/helpful on osx,
 #try to fix zsh in emacs
