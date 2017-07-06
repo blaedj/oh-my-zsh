@@ -68,9 +68,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 # add dotifiles bin/ folder to path
-export PATH=$PATH:/Users/blaed/.dotfiles/bin/
-
-ulimit -c unlimited
+export PATH=$PATH:/Users/blaed/.dotfiles/bin
+export PATH=$PATH:/Users/blaed/go/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -79,9 +78,16 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
 ### Set the default editor to emacs, runs emacsclient
-export EDITOR="ec"
+export EDITOR="e"
 
 #export PATH=$PATH:"~/.rvm/bin:/Applications/Android Studio.app/sdk/platform-tools" # Add RVM to PATH for scripting
 #PATH=$PATH:$HOME/idea/bin # Add intellij IDEA to path
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export EMAIL="blaedj@gmail.com"
+export NAME="Blaed Johnston"
+export EMAIL="smtp.gmail.com"
+
+source ~/.secrets.sh
+
+export PATH="$HOME/.yarn/bin:$PATH"
