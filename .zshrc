@@ -11,16 +11,15 @@ ZSH_THEME="blaed"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -lh"
+alias lstime="ls -t"
 #alias -s pdf=evince ubuntu specific
-
-alias gls="git ls"
-
-alias rpsec="nocorrect rspec"
-alias rspec="nocorrect rspec"
-alias z="zeus"
 
 alias ec='open -a /usr/local/Cellar/emacs/24.5/Emacs.app "$@"'
 
+alias startredis='redis-server /usr/local/etc/redis.conf'
+
+# use with a search term arg to search running processes
+alias psag='ps a | ag'
 
 # may only be necessary/helpful on osx,
 #try to fix zsh in emacs
@@ -57,10 +56,13 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git themes bundler zsh-syntax-highlighting)
+plugins=(git themes zsh-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
 
+# grc (a log colorizer) has built-in support for some commands.
+# the following automatically sets some aliases to colorize those commands
+[[ -s "/etc/grc.zsh" ]] && source /etc/grc.zsh
 
 source $ZSH/oh-my-zsh.sh
 

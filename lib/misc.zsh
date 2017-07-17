@@ -37,3 +37,5 @@ alias ios="open /Applications/Xcode.app/Contents/Applications/iOS\ Simulator.app
 
 alias frs="foreman run spring rails server -b 0.0.0.0"
 alias pt="papertrail"
+alias vim="/usr/local/bin/vim"
+alias nombom="npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install"
