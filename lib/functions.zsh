@@ -10,11 +10,6 @@ function upgrade_oh_my_zsh() {
   env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh
 }
 
-function take() {
-  mkdir -p $1
-  cd $1
-}
-
 #
 # Get the value of an alias.
 #
