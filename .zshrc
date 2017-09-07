@@ -79,8 +79,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # add postgresql from postgres.app to path
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
-### Set the default editor to emacs, runs emacsclient
-export EDITOR="e"
+### Set the default editor to vim, for terminal use.
+export EDITOR="vim"
 
 #export PATH=$PATH:"~/.rvm/bin:/Applications/Android Studio.app/sdk/platform-tools" # Add RVM to PATH for scripting
 #PATH=$PATH:$HOME/idea/bin # Add intellij IDEA to path
