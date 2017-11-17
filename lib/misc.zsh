@@ -27,4 +27,4 @@ alias p='$(fc -ln -1)'
 alias tails="tail -n 75 -f"
 alias rpsec="rspec" # I can't spell rspec
 
-alias frs="foreman run spring rails server -b 0.0.0.0"
+alias frs="foreman run rails server -b 0.0.0.0"
