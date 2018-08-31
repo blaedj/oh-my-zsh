@@ -37,11 +37,17 @@ ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
 
 source $ZSH/oh-my-zsh.sh
 
+# for bat: https://github.com/sharkdp/bat
+export BAT_THEME="TwoDark"
+
 # Customize to your needs...
 export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 # add dotifiles bin/ folder to path
 export PATH=$PATH:/Users/blaed/.dotfiles/bin
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
 
 # add postgresql from postgres.app to path
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
@@ -66,8 +72,5 @@ if [ -f '/Users/blaed/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/blae
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/blaed/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/blaed/google-cloud-sdk/completion.zsh.inc'; fi
-
-export GOPATH="$HOME/code/go"
-export PATH=$PATH:$GOPATH/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
