@@ -74,3 +74,6 @@ if [ -f '/Users/blaed/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/blae
 if [ -f '/Users/blaed/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/blaed/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export GOPATH="$HOME/code/go"
+export PATH="$PATH:$GOPATH/bin"
