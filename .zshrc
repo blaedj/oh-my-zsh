@@ -75,5 +75,6 @@ if [ -f '/Users/blaed/google-cloud-sdk/completion.zsh.inc' ]; then source '/User
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export GO111MODULE="on"
 export GOPATH="$HOME/code/go"
 export PATH="$PATH:$GOPATH/bin"
