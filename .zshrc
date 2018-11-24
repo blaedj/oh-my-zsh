@@ -73,8 +73,11 @@ if [ -f '/Users/blaed/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/blae
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/blaed/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/blaed/google-cloud-sdk/completion.zsh.inc'; fi
 
+export GOPATH="$HOME/code/go"
+export PATH"=$PATH:$GOPATH/bin"
+
+# turn on erlang/elixir shell history
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export GO111MODULE="on"
-export GOPATH="$HOME/code/go"
-export PATH="$PATH:$GOPATH/bin"
