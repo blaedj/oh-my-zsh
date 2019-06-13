@@ -27,7 +27,9 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# plugins=(git themes zsh-syntax-highlighting)
+# To install the fast-highlighting plugin:
+#   git clone https://github.com/zdharma/fast-syntax-highlighting.git \
+#       ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
 plugins=(git themes fast-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
