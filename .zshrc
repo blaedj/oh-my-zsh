@@ -27,7 +27,8 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git themes zsh-syntax-highlighting)
+# plugins=(git themes zsh-syntax-highlighting)
+plugins=(git themes fast-syntax-highlighting)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
 
@@ -52,13 +53,12 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # add postgresql from postgres.app to path
 export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
-### Set the default editor to vim, for terminal use.
-export EDITOR="vim"
+# Set the default editor to a custom command, that first tries to use emacsclient, but falls back to vim
+export EDITOR="e"
 
-#export PATH=$PATH:"~/.rvm/bin:/Applications/Android Studio.app/sdk/platform-tools" # Add RVM to PATH for scripting
-#PATH=$PATH:$HOME/idea/bin # Add intellij IDEA to path
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+eval "$(rbenv init -)"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export EMAIL="blaedj@gmail.com"
 export NAME="Blaed Johnston"
 #export EMAIL="smtp.gmail.com"
@@ -66,12 +66,6 @@ export NAME="Blaed Johnston"
 source ~/.secrets.sh
 
 export PATH="$HOME/.yarn/bin:$PATH"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/blaed/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/blaed/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/blaed/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/blaed/google-cloud-sdk/completion.zsh.inc'; fi
 
 export GOPATH="$HOME/code/go"
 export PATH"=$PATH:$GOPATH/bin"
@@ -81,3 +75,9 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/blaed/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/blaed/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/blaed/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/blaed/google-cloud-sdk/completion.zsh.inc'; fi
