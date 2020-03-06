@@ -47,18 +47,18 @@ export BAT_THEME="TwoDark"
 export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 # add dotifiles bin/ folder to path
-export PATH=$PATH:/Users/blaed/.dotfiles/bin
+export PATH=$PATH:~/.dotfiles/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # add postgresql from postgres.app to path
-export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+#export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 
 # Set the default editor to a custom command, that first tries to use emacsclient, but falls back to vim
 export EDITOR="e"
 
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rbenv/bin" # Add rbenv to PATH for scripting
 eval "$(rbenv init -)"
 
 export EMAIL="blaedj@gmail.com"
@@ -69,8 +69,9 @@ source ~/.secrets.sh
 
 export PATH="$HOME/.yarn/bin:$PATH"
 
-export GOPATH="$HOME/code/go"
-export PATH"=$PATH:$GOPATH/bin"
+#export GOPATH="$HOME/code/go"
+#export PATH"=$PATH:$GOPATH/bin"
+export PATH="$PATH:/usr/local/go/bin"
 
 # turn on erlang/elixir shell history
 export ERL_AFLAGS="-kernel shell_history enabled"
