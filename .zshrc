@@ -11,6 +11,12 @@ ZSH_THEME="blaed"
 alias ll="ls -lh"
 alias lstime="ls -t"
 
+if [ "$(uname -s)" = "Linux" ]
+then
+    alias fd="fdfind"
+fi
+
+
 # may only be necessary/helpful on osx,
 #try to fix zsh in emacs
 export LANG='en_US.UTF-8'
