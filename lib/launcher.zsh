@@ -39,6 +39,38 @@ klaunch() {
     case $1 in
         "help")
             echo "please provide the operating system of the launcher host: {mac,centos,ubuntu,macold}" ;;
+        "sudomac" )
+            sudo launchctl asuser 0 \
+                ~/code/go/src/github.com/kolide/launcher/build/launcher \
+                -root_directory $(mktemp -d) \
+                -hostname localhost:5000 \
+                -enroll_secret_path /Users/blaed/code/rails/k2/tmp/secret.txt \
+                --osqueryd_path "/usr/local/kolide-k2/bin/osqueryd" \
+                --insecure \
+                --insecure_transport \
+                -transport jsonrpc \
+                -autoupdate \
+                -update_channel="beta" \
+                -debug \
+                -with_initial_runner \
+                -disable_control_tls \
+                2>&1 | tee /Users/blaed/tmp/local_sudomac.log ;;
+        "persistentmac" )
+            ~/code/go/src/github.com/kolide/launcher/build/launcher \
+                -root_directory ~/tmp/launcherroot \
+                -hostname localhost:5000 \
+                -enroll_secret_path ~/code/rails/k2/tmp/secret.txt \
+                --insecure \
+                --insecure_transport \
+                --osqueryd_path "/usr/local/kolide-k2/bin/osqueryd" \
+                -transport jsonrpc \
+                -autoupdate \
+                -debug \
+                -with_initial_runner \
+                -disable_control_tls \
+                2>&1 | tee ~/tmp/local.log ;;
+
+
         "mac" )
             ~/code/go/src/github.com/kolide/launcher/build/launcher \
                 -root_directory $(mktemp -d) \
@@ -48,6 +80,7 @@ klaunch() {
                 --insecure_transport \
                 --osqueryd_path "/usr/local/kolide-k2/bin/osqueryd" \
                 -transport jsonrpc \
+                -autoupdate \
                 -debug \
                 -with_initial_runner \
                 -disable_control_tls \
