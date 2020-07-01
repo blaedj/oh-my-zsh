@@ -16,6 +16,9 @@ then
     alias fd="fdfind"
 fi
 
+# 'directory aliases'
+# usage: `cd ~go`
+hash -d go=$HOME/code/go/src/github.com
 
 # may only be necessary/helpful on osx,
 #try to fix zsh in emacs
@@ -76,8 +79,10 @@ source ~/.secrets.sh
 export PATH="$HOME/.yarn/bin:$PATH"
 
 #export GOPATH="$HOME/code/go"
-#export PATH"=$PATH:$GOPATH/bin"
+export PATH"=$PATH:$HOME/code/go/bin"
 export PATH="$PATH:/usr/local/go/bin"
+
+export DISABLE_SPRING=true
 
 # turn on erlang/elixir shell history
 export ERL_AFLAGS="-kernel shell_history enabled"
